@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+    <link href="/css/login.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="topRow">
+        <div class="user__info">
+            <p class="user"></p>
+        </div>
+        <div class="divider"></div>
+        <div class="logout__button">
+            <button class="btn btn--primary logout">Log out</button>
+        </div>
+    </div>
+</header>
+
+<div class="header">
+    <div class="header__inner container">
+        <h1 class="header__title">Create Todo-list</h1>
+        <form action="#" class="todo-form" id="todo-form">
+            <fieldset>
+                <legend>Input title for the task</legend>
+                <div class="todo-form__group">
+                    <label for="todo-form__input"></label>
+                    <input class="todo-form__input" id="todo-form__input" placeholder="Todo Title..." required
+                           type="text"/>
+                </div>
+                <legend>Input content for the task</legend>
+                <div class="todo-form__group">
+                    <label for="todo-form__content"></label>
+                    <textarea class="todo-form__textarea" id="todo-form__content" placeholder="Todo Description..."
+                              required></textarea>
+                </div>
+
+                <legend>Input due date for the task</legend>
+                <div class="todo-form__group">
+                    <label for="todo-form__date"></label>
+                    <input class="todo-form__input" id="todo-form__date" required type="datetime-local">
+                </div>
+                <button class="btn btn--primary" id="button-add" type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div class="body">
+    <div class="container">
+        <div class="cards">
+            <div class="cards__row">
+                <div class="card" >
+
+                    <div class="card__header">
+                        <label for="type"></label>
+                        <input class="type" id="type" readonly>
+                        <i id="card-id" style="display: none;"></i>
+                        <div>
+                            <button class="btn fa fa-trash" onclick="removeCard(this)"></button>
+                            <button class="btn fa fa-edit" onclick="edit(this)"></button>
+                            <button class="btn fa fa-undo" onclick="discard(this)"></button>
+                            <button class="btn fa fa-save" onclick="update(this)"></button>
+                        </div>
+                    </div>
+
+                    <div class="card__body">
+                        <label for="content"></label>
+                        <textarea class="content" id="content" readonly></textarea>
+                    </div>
+
+                    <div class="card__footer">
+                        <div class="footer__item">
+                            <label for="date-show">Due date: </label>
+                            <input class="date" id="date-show" readonly>
+                            <label for="date-edit" style="display: none">Due date: </label>
+                            <input class="date-input" id="date-edit" style="display: none" type="datetime-local">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="/js/login.js"></script>
+<script src="/js/get-ToDo.js"></script>
+<script src="/js/remove-ToDo.js"></script>
+<script src="/js/update-ToDo.js"></script>
+<script src="/js/post-ToDO.js"></script>
+<script src="/js/crud-handler.js"></script>
+</html>

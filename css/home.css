@@ -1,0 +1,283 @@
+﻿@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+    line-height: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+* {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #d6e5f3;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+    padding: 0 1rem;
+    border-radius: 4px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.btn.btn--primary {
+    background-color: #007FFF;
+    color: #fff;
+}
+
+.topRow {
+    display: flex;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    width: 100000px;
+}
+
+.user__info {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+
+}
+
+.user__info .user {
+    margin: 10px;
+    width: 300px;
+    font-size: 12.5pt;
+    font-weight: bold;
+}
+
+.logout__button {
+    width: 1000px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.logout__button .logout {
+    margin: 10px;
+    width: 100px;
+}
+
+.header {
+    background-color: #fff;
+    padding: 1.5rem 0;
+
+}
+
+.header .header__inner {
+    margin: auto;
+    width: 100%;
+    max-width: 540px;
+}
+
+.header .header__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #007FFF;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.todo-form {
+    width: 100%;
+}
+
+.todo-form fieldset {
+    border: 0;
+}
+
+.todo-form legend {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+}
+
+.todo-form .todo-form__group {
+    display: flex;
+    align-items: center;
+}
+
+.todo-form .todo-form__input,
+.todo-form .todo-form__textarea {
+    width: 100%;
+    min-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    font-size: 14px;
+    color: #555;
+    font-weight: 700;
+    outline: 0;
+    transition: border 0.05s ease-in;
+}
+
+.todo-form .todo-form__input:focus,
+.todo-form .todo-form__textarea:focus {
+    border: 2px solid #007FFF;
+}
+
+.todo-form .todo-form__input {
+    height: 40px;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+}
+
+.todo-form .todo-form__input::placeholder {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.todo-form .todo-form__textarea {
+    height: 90px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.body {
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.cards__row .card:first-child {
+    display: none;
+}
+
+.cards {
+    width: 100%;
+}
+
+.cards .cards__row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 32%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    padding: 1rem 0.5rem;
+    position: relative;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.card .card__header {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.card .card__header .type {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.card .card__body .content {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.card .card__footer .footer__item .date {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.card .card__header .btn:hover {
+    color: #1998e0;
+}
+
+.card .card__header .type {
+    border: 1px solid rgba(204, 204, 204, 0);
+    outline: 0;
+    transition: border 0.05s ease-in;
+}
+
+.card .card__footer .footer__item .due__date {
+    font-size: 10px;
+    outline: 0;
+}
+
+.card .card__body .content {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    outline: 0;
+    transition: border 0.05s ease-in;
+}
+
+.card .card__footer .footer__item #date-edit {
+    border: 1px solid #ccc;
+    outline: 0;
+    transition: border 0.05s ease-in;
+}
+
+.card .card__footer .footer__item #date-show {
+    border: 1px solid rgba(204, 204, 204, 0);
+    outline: 0;
+    transition: border 0.05s ease-in;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+
+.card .card__header .type:focus,
+.card .card__body .content:focus,
+.card .card__footer .footer__item #date-edit,
+.card .card__footer .footer__item #date-show:focus {
+    border: 1px solid #007FFF;
+}
+
+.card .card__title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card .card__body {
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.card .card__footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card .card__footer .footer__item {
+    margin-top: 1rem;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 20px;
+}

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link href="/css/login.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<section class="forms-section">
+
+    <h1 class="section-title">To-Do Reminder 3000</h1>
+
+    <div class="forms">
+
+        <div class="form-wrapper is-active" id="login-box">
+            <button class="switcher switcher-login" type="button">
+                Login
+                <span class="underline"></span>
+            </button>
+
+            <div class="form form-login" id="loginForm">
+                <fieldset>
+                    <legend>Please, enter your name and password for login.</legend>
+                    <div class="input-block">
+                        <label for="loginUsername">Name</label>
+                        <input id="loginUsername" required type="text">
+                    </div>
+                    <div class="input-block">
+                        <label for="loginPassword">Password</label>
+                        <input id="loginPassword" required type="password">
+                    </div>
+
+                    <button class="btn-login" onclick="logIn()" type="submit">Submit</button>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="form-wrapper" id="register-box">
+
+            <button class="switcher switcher-signup" type="button">
+                Sign Up
+                <span class="underline"></span>
+            </button>
+
+            <div class="form form-signup" id="registerForm">
+                <fieldset>
+                    <legend>Please, enter your email, password and username to sign up.</legend>
+                    <div class="input-block">
+                        <label for="signupEmail">E-mail</label>
+                        <input id="signupEmail" required type="email">
+                    </div>
+                    <div class="input-block">
+                        <label for="signupPassword">Password</label>
+                        <input id="signupPassword" required type="password">
+                    </div>
+                    <div class="input-block">
+                        <label for="signupUsername">Username</label>
+                        <input id="signupUsername" required type="text">
+                    </div>
+                </fieldset>
+                <button class="btn-signup" onclick="registration()" type="submit">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+<script src="/js/login.js"></script>
+</html>
